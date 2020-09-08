@@ -14,5 +14,25 @@ export default class Test {
         //     </div>
         // </div>
         var app, div, table, tbody, tr, td;
+        app = document.getElementById("app");
+        
+        div = app.appendChild(document.createElement("div"));
+        div.classList.add("feu");
+        div.classList.add("horizontal");
+        
+        table = div.appendChild(document.createElement("table"));
+        
+        tbody = table.appendChild(document.createElement("tbody"));
+        
+        tr = tbody.appendChild(document.createElement("tr"));
+        
+        td = tr.appendChild(document.createElement("td"));
+        td.style.backgroundColor = "red";
+        
+        td = tr.appendChild(document.createElement("td"));
+        td.style.backgroundColor = "yellow";
+        
+        td = tr.appendChild(document.createElement("td"));
+        td.style.backgroundColor = "green";
     }
 }
